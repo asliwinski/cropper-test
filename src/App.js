@@ -4,7 +4,7 @@ import CropperWrapper from './CropperWrapper'
 
 class App extends Component {
   state={
-    viewMode: 0,
+    viewMode: 2,
     scale: 1
   }
 
@@ -17,7 +17,7 @@ class App extends Component {
 
     return (
       <div className={className}>
-        <select onChange={this.handleChange} style={{margin: '0 auto'}}>
+        <select onChange={this.handleChange} style={{margin: '0 auto'}} value={this.state.viewMode}>
           <option value={0}>0</option>
           <option value={1}>1</option>
           <option value={2}>2</option>

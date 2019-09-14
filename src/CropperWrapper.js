@@ -27,12 +27,10 @@ class EditImage extends Component {
               zoomOnWheel={false}
               scaleX={scale}
               scaleY={scale}
-              ready={() => {
-                this.refs.cropper.setCropBoxData({
-                  width: 400,
-                  height: 400
-                })
-              }}
+              autoCrop={true}
+              autoCropArea={1}
+              minCropBoxWidth={400}
+              minCropBoxHeight={400}
               movable={true}
               dragMode={'move'}
               viewMode={viewMode}
